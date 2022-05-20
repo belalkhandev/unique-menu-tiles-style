@@ -1,0 +1,29 @@
+{
+  "name": "tiles-menu",
+  "version": "1.0.0",
+  "description": "Unique menu tiles style",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/belalkhandev/unique-menu-tiles-style.git"
+  },
+  "keywords": [
+    "unique",
+    "menu",
+    "style"
+  ],
+  "author": "Belal khan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/belalkhandev/unique-menu-tiles-style/issues"
+  },
+  "homepage": "https://github.com/belalkhandev/unique-menu-tiles-style#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "boxicons": "^2.1.2",
+    "sass": "^1.52.0"
+  }
+}
