@@ -1,0 +1,131 @@
+.menu-bar {
+    color: $color-primary;
+
+    &:hover {
+        cursor: pointer;
+        color: $color-white;
+    }
+}
+
+.menu-tiles {
+    position: fixed;
+    top: 48px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    visibility: hidden;
+    
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $color-primary;
+        z-index: -1;
+        opacity: 0;
+        visibility: hidden;
+        transition: 100ms 100ms;
+
+    }
+
+    .menu-tile {
+        width: 150px;
+        height: 150px;
+        background-color: $color-primary;
+        color: $color-white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: -95px;
+        left: -60px;
+        transform: scale(0.1);
+        visibility: hidden;
+        cursor: pointer;
+        border-radius: 10px;
+
+        &:hover {
+            background-color: black;
+        }
+
+        @for $i from 1 through 24 {
+            @if ($i <= 6) {
+                &:nth-child(#{$i}) {
+                    transition: calc(25ms * #{$i - 3});
+                }
+            }
+
+            @else if ($i <= 12) {
+                &:nth-child(#{$i}) {
+                    transition: calc(25ms * #{$i - 6});
+                }
+            }
+
+            @else if ($i <= 18) {
+                &:nth-child(#{$i}) {
+                    transition: calc(25ms * #{$i - 9});
+                }
+            }
+
+            @else if ($i <= 24) {
+                &:nth-child(#{$i}) {
+                    transition: calc(25ms * #{$i - 12});
+                }
+            }
+        }
+    }
+
+    &.open-tiles {
+
+        visibility: visible;
+        
+        &::after {
+            visibility: visible;
+            opacity: 0.25;
+            transition: 200ms;
+        }
+
+        .menu-tile {
+            visibility: visible;
+            transform: scale(1);
+            
+            @for $i from 1 through 24 {
+                @if ($i <= 6) {
+                    &:nth-child(#{$i}) {
+                        top: 50px;
+                        left: calc(100px + 180px * #{$i - 1});
+                        transition: calc(80ms * #{$i - 3});
+                    }
+                }
+
+                @else if ($i <= 12) {
+                    &:nth-child(#{$i}) {
+                        top: 230px;
+                        left: calc(100px + 180px * #{$i - 7});
+                        transition: calc(80ms * #{$i - 6});
+                    }
+                }
+
+                @else if ($i <= 18) {
+                    &:nth-child(#{$i}) {
+                        top: 410px;
+                        left: calc(100px + 180px * #{$i - 13});
+                        transition: calc(80ms * #{$i - 9});
+                    }
+                }
+
+                @else if ($i <= 24) {
+                    &:nth-child(#{$i}) {
+                        top: 590px;
+                        left: calc(100px + 180px * #{$i - 19});
+                        transition: calc(80ms * #{$i - 12});
+                    }
+                }
+            }
+        }
+        
+    }
+}

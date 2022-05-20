@@ -1,1 +1,253 @@
-/*# sourceMappingURL=style.css.map */
+.menu-bar {
+  color: #5f1bdd;
+}
+.menu-bar:hover {
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.menu-tiles {
+  position: fixed;
+  top: 48px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  visibility: hidden;
+}
+.menu-tiles::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #5f1bdd;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  transition: 100ms 100ms;
+}
+.menu-tiles .menu-tile {
+  width: 150px;
+  height: 150px;
+  background-color: #5f1bdd;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -95px;
+  left: -60px;
+  transform: scale(0.1);
+  visibility: hidden;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.menu-tiles .menu-tile:hover {
+  background-color: black;
+}
+.menu-tiles .menu-tile:nth-child(1) {
+  transition: calc(25ms * -2);
+}
+.menu-tiles .menu-tile:nth-child(2) {
+  transition: calc(25ms * -1);
+}
+.menu-tiles .menu-tile:nth-child(3) {
+  transition: calc(25ms * 0);
+}
+.menu-tiles .menu-tile:nth-child(4) {
+  transition: calc(25ms * 1);
+}
+.menu-tiles .menu-tile:nth-child(5) {
+  transition: calc(25ms * 2);
+}
+.menu-tiles .menu-tile:nth-child(6) {
+  transition: calc(25ms * 3);
+}
+.menu-tiles .menu-tile:nth-child(7) {
+  transition: calc(25ms * 1);
+}
+.menu-tiles .menu-tile:nth-child(8) {
+  transition: calc(25ms * 2);
+}
+.menu-tiles .menu-tile:nth-child(9) {
+  transition: calc(25ms * 3);
+}
+.menu-tiles .menu-tile:nth-child(10) {
+  transition: calc(25ms * 4);
+}
+.menu-tiles .menu-tile:nth-child(11) {
+  transition: calc(25ms * 5);
+}
+.menu-tiles .menu-tile:nth-child(12) {
+  transition: calc(25ms * 6);
+}
+.menu-tiles .menu-tile:nth-child(13) {
+  transition: calc(25ms * 4);
+}
+.menu-tiles .menu-tile:nth-child(14) {
+  transition: calc(25ms * 5);
+}
+.menu-tiles .menu-tile:nth-child(15) {
+  transition: calc(25ms * 6);
+}
+.menu-tiles .menu-tile:nth-child(16) {
+  transition: calc(25ms * 7);
+}
+.menu-tiles .menu-tile:nth-child(17) {
+  transition: calc(25ms * 8);
+}
+.menu-tiles .menu-tile:nth-child(18) {
+  transition: calc(25ms * 9);
+}
+.menu-tiles .menu-tile:nth-child(19) {
+  transition: calc(25ms * 7);
+}
+.menu-tiles .menu-tile:nth-child(20) {
+  transition: calc(25ms * 8);
+}
+.menu-tiles .menu-tile:nth-child(21) {
+  transition: calc(25ms * 9);
+}
+.menu-tiles .menu-tile:nth-child(22) {
+  transition: calc(25ms * 10);
+}
+.menu-tiles .menu-tile:nth-child(23) {
+  transition: calc(25ms * 11);
+}
+.menu-tiles .menu-tile:nth-child(24) {
+  transition: calc(25ms * 12);
+}
+.menu-tiles.open-tiles {
+  visibility: visible;
+}
+.menu-tiles.open-tiles::after {
+  visibility: visible;
+  opacity: 0.25;
+  transition: 200ms;
+}
+.menu-tiles.open-tiles .menu-tile {
+  visibility: visible;
+  transform: scale(1);
+}
+.menu-tiles.open-tiles .menu-tile:nth-child(1) {
+  top: 50px;
+  left: calc(100px + 180px * 0);
+  transition: calc(80ms * -2);
+}
+.menu-tiles.open-tiles .menu-tile:nth-child(2) {
+  top: 50px;
+  left: calc(100px + 180px * 1);
+  transition: calc(80ms * -1);
+}
+.menu-tiles.open-tiles .menu-tile:nth-child(3) {
+  top: 50px;
+  left: calc(100px + 180px * 2);
+  transition: calc(80ms * 0);
+}
+.menu-tiles.open-tiles .menu-tile:nth-child(4) {
+  top: 50px;
+  left: calc(100px + 180px * 3);
+  transition: calc(80ms * 1);
+}
+.menu-tiles.open-tiles .menu-tile:nth-child(5) {
+  top: 50px;
+  left: calc(100px + 180px * 4);
+  transition: calc(80ms * 2);
+}
+.menu-tiles.open-tiles .menu-tile:nth-child(6) {
+  top: 50px;
+  left: calc(100px + 180px * 5);
+  transition: calc(80ms * 3);
+}
+.menu-tiles.open-tiles .menu-tile:nth-child(7) {
+  top: 230px;
+  left: calc(100px + 180px * 0);
+  transition: calc(80ms * 1);
+}
+.menu-tiles.open-tiles .menu-tile:nth-child(8) {
+  top: 230px;
+  left: calc(100px + 180px * 1);
+  transition: calc(80ms * 2);
+}
+.menu-tiles.open-tiles .menu-tile:nth-child(9) {
+  top: 230px;
+  left: calc(100px + 180px * 2);
+  transition: calc(80ms * 3);
+}
+.menu-tiles.open-tiles .menu-tile:nth-child(10) {
+  top: 230px;
+  left: calc(100px + 180px * 3);
+  transition: calc(80ms * 4);
+}
+.menu-tiles.open-tiles .menu-tile:nth-child(11) {
+  top: 230px;
+  left: calc(100px + 180px * 4);
+  transition: calc(80ms * 5);
+}
+.menu-tiles.open-tiles .menu-tile:nth-child(12) {
+  top: 230px;
+  left: calc(100px + 180px * 5);
+  transition: calc(80ms * 6);
+}
+.menu-tiles.open-tiles .menu-tile:nth-child(13) {
+  top: 410px;
+  left: calc(100px + 180px * 0);
+  transition: calc(80ms * 4);
+}
+.menu-tiles.open-tiles .menu-tile:nth-child(14) {
+  top: 410px;
+  left: calc(100px + 180px * 1);
+  transition: calc(80ms * 5);
+}
+.menu-tiles.open-tiles .menu-tile:nth-child(15) {
+  top: 410px;
+  left: calc(100px + 180px * 2);
+  transition: calc(80ms * 6);
+}
+.menu-tiles.open-tiles .menu-tile:nth-child(16) {
+  top: 410px;
+  left: calc(100px + 180px * 3);
+  transition: calc(80ms * 7);
+}
+.menu-tiles.open-tiles .menu-tile:nth-child(17) {
+  top: 410px;
+  left: calc(100px + 180px * 4);
+  transition: calc(80ms * 8);
+}
+.menu-tiles.open-tiles .menu-tile:nth-child(18) {
+  top: 410px;
+  left: calc(100px + 180px * 5);
+  transition: calc(80ms * 9);
+}
+.menu-tiles.open-tiles .menu-tile:nth-child(19) {
+  top: 590px;
+  left: calc(100px + 180px * 0);
+  transition: calc(80ms * 7);
+}
+.menu-tiles.open-tiles .menu-tile:nth-child(20) {
+  top: 590px;
+  left: calc(100px + 180px * 1);
+  transition: calc(80ms * 8);
+}
+.menu-tiles.open-tiles .menu-tile:nth-child(21) {
+  top: 590px;
+  left: calc(100px + 180px * 2);
+  transition: calc(80ms * 9);
+}
+.menu-tiles.open-tiles .menu-tile:nth-child(22) {
+  top: 590px;
+  left: calc(100px + 180px * 3);
+  transition: calc(80ms * 10);
+}
+.menu-tiles.open-tiles .menu-tile:nth-child(23) {
+  top: 590px;
+  left: calc(100px + 180px * 4);
+  transition: calc(80ms * 11);
+}
+.menu-tiles.open-tiles .menu-tile:nth-child(24) {
+  top: 590px;
+  left: calc(100px + 180px * 5);
+  transition: calc(80ms * 12);
+}/*# sourceMappingURL=style.css.map */
